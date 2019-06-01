@@ -10,7 +10,9 @@ const SecondsPerSlide = 5 * 1000 + 2 * SecondsPerTransition;
 
 const SlideImageUrls = [
     "./assets/images/maze.jpg",
-    "./assets/images/secondroom.jpg"
+	"./assets/images/secondroom.jpg",
+	"./assets/images/sideroom1.jpg",
+	"./assets/images/sideroom2.jpg"
 ]
 
 const SlideShowState = {
@@ -40,7 +42,8 @@ function initializeNodes() {
 function createNode(slideID) {
     const node = document.createElement("div");
     node.id = `${SlideIDPrefix}${slideID}`;
-    node.className = "slide";
+	node.className = "slide";
+	node.style.display = "none";
     SlideShowRootNode.appendChild(node);
     return node;
 }
