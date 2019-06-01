@@ -14,6 +14,7 @@ const SlideShowState = {
     timer: null
 }
 
+// initializes the carousel
 function initialize() {
     if (!canInitialize()) {
         throw new Error("Missing slide image URLs, Slide HTML nodes, or number of slides is too small");
@@ -24,13 +25,39 @@ function initialize() {
     SlideShowState.timer = setInterval(swapSlide, SecondsPerSlide);
 }
 
+
+// Checks that the programmer has correctly set the number of slides,
+// slide urls, and slide nodes
 function canInitialize() {
     return NumberOfSlides == SlideImageUrls.length && 
         NumberOfSlides == SlideHtmlNodes.length;
 }
 
+// Handler function for when the carousel transitions
 function swapSlide() {
-    console.log("swap");
+    hide();
+    if (isLastSlide()) {
+        SlideShowState.currentSlideID = 0;
+    } else {
+        SlideShowState.currentSlideID++;
+    }
+    show();
 }
 
+// Hides the current slide stored in state
+function hide() {
+    console.log("hide");
+}
+
+// Checks if the carousel's state is a last slide state
+function isLastSlide() {
+    return SlideShowState.currentSlideID == NumberOfSlides - 1;
+}
+
+// shows the current slide stored in state
+function show() {
+    console.log("show");
+}
+
+// Actual call to begin the carousel
 initialize();
