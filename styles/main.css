@@ -5,18 +5,32 @@ body, html {
     padding: 0;
 }
 
-#title {
-    text-align: center;
-    font-size: 64px;
-    color: #efefef;
-}
-
 #hero {
     background-color: #101010;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
+}
+
+#title {
+    position: absolute;
+    left: 50%;
+    margin-left: -248px;
+    text-align: center;
+    font-size: 64px;
+    color: #efefef;
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
 
 .scroll-down {
@@ -34,7 +48,6 @@ body, html {
     border-bottom: 2px solid #dfdfdf;
     border-right: 2px solid #dfdfdf;
     z-index: 9;
-    left: 50%;
     -webkit-transform: translate(-50%, 0%) rotate(45deg);
     -moz-transform: translate(-50%, 0%) rotate(45deg);
     transform: translate(-50%, 0%) rotate(45deg);
