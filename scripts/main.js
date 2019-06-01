@@ -9,8 +9,8 @@ const SlideShowRootNode = document.getElementById(RootID);
 const SecondsPerSlide = 5 * 1000 + 2 * SecondsPerTransition; 
 
 const SlideImageUrls = [
-    "./assets/images/maze.jpg",
-    "./assets/images/secondroom.jpg"
+    "assets/images/maze.jpg",
+    "assets/images/secondroom.jpg"
 ]
 
 const SlideShowState = {
