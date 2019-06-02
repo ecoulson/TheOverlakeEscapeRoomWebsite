@@ -117,7 +117,8 @@ body, html {
 #blurb-2-background-color {
 	background-color: rgb(100, 50, 50);
 	grid-column-start: 2;
-	grid-column-end: 2;
+    grid-column-end: 2;
+    padding: 50px 0;
 }
 
 #blurb-3 {
