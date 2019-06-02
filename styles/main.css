@@ -91,11 +91,12 @@ body, html {
 
 #blurb-container {
 	display: grid;
-	grid-template-columns: 33%, 33%, 33%;
+	grid-template-columns: 33vw 33vw 33vw;
 	grid-template-rows: 500px;
 	background-color: #101010;
 	color: #efefef;
-	border-top: 20px rgb(100, 50, 50) solid;
+    border-top: 20px rgb(100, 50, 50) solid;
+    border-bottom: 20px #101010 solid;
 }
 
 .blurb {
@@ -109,19 +110,30 @@ body, html {
 }
 
 #blurb-1 {
-	grid-column-start: 0;
+	grid-column-start: 1;
 	grid-column-end: 1;
 }
 
 #blurb-2-background-color {
 	background-color: rgb(100, 50, 50);
-	grid-column-start: 1;
+	grid-column-start: 2;
 	grid-column-end: 2;
 }
 
 #blurb-3 {
-	grid-column-start: 2;
+	grid-column-start: 3;
 	grid-column-end: 3;
+}
+
+@media screen and (max-width: 840px) {
+    .blurb {
+        width: 100%;
+    }
+
+    #blurb-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .blurb-icon {
