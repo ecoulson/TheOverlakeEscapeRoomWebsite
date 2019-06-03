@@ -10,9 +10,12 @@ const SecondsPerSlide = 5 * 1000 + 2 * SecondsPerTransition;
 
 const SlideImageUrls = [
     "./assets/images/maze.jpg",
+	"./assets/images/entry.jpg",
+	"./assets/images/hallway.jpg",
+	"./assets/images/teamwork.jpg",
+	"./assets/images/roomview.jpg",
 	"./assets/images/secondroom.jpg",
-	"./assets/images/sideroom1.jpg",
-	"./assets/images/sideroom2.jpg"
+	"./assets/images/sideroom.jpg"
 ]
 
 const SlideShowState = {
