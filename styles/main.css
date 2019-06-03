@@ -18,7 +18,7 @@ body, html {
     left: 50%;
     margin-left: -248px;
     text-align: center;
-    font-size: 64px;
+    font-size: 5vw;
     color: #efefef;
     z-index: 1;
 }
@@ -26,6 +26,8 @@ body, html {
 @media screen and (max-width: 840px) {
 	#title {
 		font-size: 32px;
+		left: 25%;
+		margin-left: 0px;
 	}
 }
 
